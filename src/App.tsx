@@ -10,7 +10,6 @@ function App() {
         <Navbar />
         <img src="computer.gif" alt="Descripción del GIF"/>
         <p className="text-white">HOLAAAAA</p>
-        <p className="text-white">HOLAAAAA</p>
       </div>
     </Background>
   );
