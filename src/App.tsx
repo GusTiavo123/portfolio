@@ -6,7 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 function App() {
   return (
     <Background>
-      <header className="max-w-6xl w-full space-y-56 z-10">
+      <header className="max-w-6xl w-full space-y-36 z-10">
         <Navbar />
         <div className="flex md:flex-row">
           <div className="text-white">
@@ -16,7 +16,7 @@ function App() {
               tamaño de esta sección de texto.
             </p>
           </div>
-          <div className=" bg-white m-0 p-0">
+          <div className=" bg-white">
             <img
               src="computer.gif"
               alt="Computer dance gif"
