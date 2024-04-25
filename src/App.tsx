@@ -6,9 +6,9 @@ import Navbar from "./components/navbar/Navbar";
 function App() {
   return (
     <Background>
-      <div className="max-w-screen-lg w-full space-y-56">
+      <div className="max-w-6xl w-full space-y-56">
         <Navbar />
-        <img src="computer.gif" alt="Descripción del GIF"/>
+        <img src="computer.gif" alt="Descripción del GIF" className="cursor-pointer"/>
         <p className="text-white">HOLAAAAA</p>
       </div>
     </Background>

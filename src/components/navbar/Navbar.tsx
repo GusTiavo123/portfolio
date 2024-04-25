@@ -1,15 +1,26 @@
+import "./navbar.css"
+
 const Navbar = () => {
   return (
-    <nav className="flex justify-between space-between">
-      <div className="text-white font-bold">Gustavo Aramayo</div>
-      <div className="text-white">
-        <a href="/work" className="pr-4 hover:text-gray-300">
+    <nav className="flex justify-between items-center pt-2">
+      <div className="text-white font-bold text-2xl">Gustavo Aramayo</div>
+      <div>
+        <a
+          href="#"
+          className="text-white mr-5 link cursor-pointer"
+        >
           /Work
         </a>
-        <a href="/about" className=" hover:text-gray-300">
+        <a
+          href="/about"
+          className="text-gray-300 hover:text-gray-300 cursor-pointer"
+        >
           /About
         </a>
-        <a href="/contact" className="pl-4 hover:text-gray-300">
+        <a
+          href="/contact"
+          className="text-white ml-5 hover:text-red-600 cursor-pointer"
+        >
           /Contact
         </a>
       </div>
