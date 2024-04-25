@@ -2,7 +2,6 @@ import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <header>
       <nav className="flex justify-between items-center pt-2">
         <div className="text-white font-bold text-2xl">Gustavo Aramayo</div>
         <div>
@@ -26,7 +25,6 @@ const Navbar = () => {
           </a>
         </div>
       </nav>
-    </header>
   );
 };
 
