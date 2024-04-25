@@ -6,7 +6,7 @@ import Navbar from "./components/navbar/Navbar";
 function App() {
   return (
     <Background>
-      <header className="max-w-6xl w-full space-y-56">
+      <header className="max-w-6xl w-full space-y-56 z-10">
         <Navbar />
         <div className="flex md:flex-row">
           <div className="text-white">
