@@ -16,11 +16,11 @@ function Header() {
             turn ideas into impactful digital realities.
           </p>
         </div>
-        <div className="flex-1 flex items-center justify-center">
+        <div className="flex-1 flex items-center justify-center ">
           <img
             src="computer.gif"
             alt="Computer dance gif"
-            className="w-max h-auto "
+            className="w-max h-auto"
           />
         </div>
       </div>
