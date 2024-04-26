@@ -22,6 +22,7 @@ module.exports = {
     extend: {
       colors: {
         'custom-gray': '#919191',
+        'custom-black': '#0f0f0f',
       },
       animation: {
         shimmer: "shimmer 2s linear infinite",
