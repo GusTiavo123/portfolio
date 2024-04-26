@@ -20,6 +20,9 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        'custom-gray': '#919191',
+      },
       animation: {
         shimmer: "shimmer 2s linear infinite",
       },
