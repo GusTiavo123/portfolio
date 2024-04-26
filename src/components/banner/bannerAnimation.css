@@ -1,0 +1,57 @@
+.overflow-hidden {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.overflow-hidden::before,
+.overflow-hidden::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    z-index: 10;
+    background: linear-gradient(to right,
+            #0f0f0f 0%,
+            transparent 100%);
+}
+
+.overflow-hidden::after {
+    right: 0;
+    background: linear-gradient(to left,
+            #0f0f0f 0%,
+            transparent 100%);
+}
+
+@keyframes moveLeftTorigth {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes moveRigthToleft {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.banner-move-left-to-right {
+    display: inline-block;
+    white-space: nowrap;
+    animation: moveLeftTorigth 300s linear infinite;
+}
+
+.banner-move-right-to-left {
+    display: inline-block;
+    white-space: nowrap;
+    animation: moveRigthToleft 330s linear infinite;
+}
