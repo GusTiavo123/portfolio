@@ -46,7 +46,7 @@ const MediaSVG: React.FC = () => {
             target='_blank'
           >
             <img src={link.src} alt={link.alt} className="h-8 w-8" />
-            <span className="absolute bottom-full mb-2 hidden group-hover:inline-block w-auto bg-custom-black text-white text-xs rounded-md shadow-lg p-1">
+            <span className="absolute bottom-full hidden group-hover:inline-block w-auto bg-custom-black text-white text-xs rounded-md shadow-lg p-1">
               {link.label}
             </span>
           </a>

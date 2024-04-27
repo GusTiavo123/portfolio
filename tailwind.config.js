@@ -10,51 +10,68 @@ const {
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-
-    // Or if using `src` directory:
-    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{ts,tsx}',
+    './components/**/*.{ts,tsx}',
+    './app/**/*.{ts,tsx}',
+    './src/**/*.{ts,tsx,js,jsx,mdx}',
   ],
-  darkMode: "class",
+  darkMode: 'class',
   theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        '2xl': '1400px',
+      },
+    },
     extend: {
       colors: {
         'custom-gray': '#919191',
         'custom-black': '#0f0f0f',
       },
-      animation: {
-        shimmer: "shimmer 2s linear infinite",
-      },
       keyframes: {
+        'accordion-down': {
+          from: { height: '0' },
+          to: { height: 'var(--radix-accordion-content-height)' },
+        },
+        'accordion-up': {
+          from: { height: 'var(--radix-accordion-content-height)' },
+          to: { height: '0' },
+        },
         shimmer: {
           from: {
-            backgroundPosition: "0 0",
+            backgroundPosition: '0 0',
           },
           to: {
-            backgroundPosition: "-200% 0",
+            backgroundPosition: '-200% 0',
           },
         },
+      },
+      animation: {
+        'accordion-down': 'accordion-down 0.2s ease-out',
+        'accordion-up': 'accordion-up 0.2s ease-out',
+        shimmer: 'shimmer 2s linear infinite',
       },
     },
   },
   plugins: [
+    require('tailwindcss-animate'),
     addVariablesForColors,
     function ({ matchUtilities, theme }) {
       matchUtilities(
         {
-          "bg-dot": (value) => ({
+          'bg-dot': (value) => ({
             backgroundImage: `url("${svgToDataUri(
               `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="16" height="16" fill="none"><circle fill="${value}" id="pattern-circle" cx="10" cy="10" r="1.6257413380501518"></circle></svg>`
             )}")`,
           }),
         },
-        { values: flattenColorPalette(theme("backgroundColor")), type: "color" }
+        { values: flattenColorPalette(theme('backgroundColor')), type: 'color' }
       );
     },
   ],
 };
+
 
 function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPalette(theme("colors"));

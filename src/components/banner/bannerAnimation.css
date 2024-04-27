@@ -9,7 +9,7 @@
     content: '';
     position: absolute;
     top: 0;
-    width: 25%;
+    width: 20%;
     height: 100%;
     z-index: 1;
     background: linear-gradient(to right,
@@ -47,11 +47,11 @@
 .banner-move-left-to-right {
     display: inline-block;
     white-space: nowrap;
-    animation: moveLeftTorigth 300s linear infinite;
+    animation: moveLeftTorigth 500s linear infinite;
 }
 
 .banner-move-right-to-left {
     display: inline-block;
     white-space: nowrap;
-    animation: moveRigthToleft 330s linear infinite;
+    animation: moveRigthToleft 530s linear infinite;
 }
