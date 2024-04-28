@@ -6,19 +6,19 @@ function Header() {
   const words = `Fullstack Web Developer`
 
   return (
-    <header className="max-w-6xl w-full space-y-36 z-10">
+    <header className="max-w-7xl space-y-36 z-10">
       <Navbar />
       <div className="flex md:flex-row">
         <div className="text-white flex-1">
-          <MediaSVG />
+          <MediaSVG /> 
           <TextGenerateEffect words={words} />
-          <p className="text-lg text-custom-gray mt-9">
+          <p className="text-xl text-custom-gray mt-9">
             My name is Gustavo, and I blend art and logic to craft web solutions
             that are as beautiful as they are functional. Driven by innovation
             and user experience, I turn ideas into impactful digital realities.
           </p>
         </div>
-        <div className="flex-1 flex items-center justify-center ">
+        <div className="flex-1 flex items-center justify-center">
           <img
             src="computer.gif"
             alt="Computer dance gif"
