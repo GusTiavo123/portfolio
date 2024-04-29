@@ -28,6 +28,8 @@ module.exports = {
       colors: {
         'custom-gray': '#919191',
         'custom-black': '#0f0f0f',
+        'custom-box-dark': '#1a1a1a',
+        'custom-box-border': '#424242',
       },
       keyframes: {
         'accordion-down': {

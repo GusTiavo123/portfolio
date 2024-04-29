@@ -12,7 +12,7 @@ function Header() {
         <div className="text-white flex-1">
           <MediaSVG /> 
           <TextGenerateEffect words={words} />
-          <p className="text-xl text-custom-gray mt-9">
+          <p className="text-xl text-custom-gray mt-10">
             My name is Gustavo, and I blend art and logic to craft web solutions
             that are as beautiful as they are functional. Driven by innovation
             and user experience, I turn ideas into impactful digital realities.

@@ -24,7 +24,7 @@ const links: Link[] = [
     href: "/your-cv-link",
     src: "cv.svg",
     alt: "CV",
-    label: "Download CV",
+    label: "Download",
   },
 ];
 
@@ -35,9 +35,9 @@ const MediaSVG: React.FC = () => {
   const handleMouseLeave = () => setTooltip(null);
 
   return (
-    <div className="flex gap-4 relative">
+    <div className="flex px-4 bg-custom-box-dark rounded-full border-t-2 border-custom-box-border w-fit">
       {links.map((link, index) => (
-        <div key={index} className="inline-flex flex-col items-center">
+        <div key={index} className="inline-flex flex-col items-center m-2">
           <a
             href={link.href}
             onMouseEnter={() => handleMouseEnter(link.label)}
@@ -45,8 +45,8 @@ const MediaSVG: React.FC = () => {
             className="group hover:scale-110 transform transition-transform duration-300 hover:shadow-lg"
             target='_blank'
           >
-            <img src={link.src} alt={link.alt} className="h-9 w-9" />
-            <span className="absolute bottom-full hidden group-hover:inline-block w-auto bg-custom-black text-white text-s rounded-md shadow-lg p-1">
+            <img src={link.src} alt={link.alt} className="h-7 w-7" />
+            <span className="absolute bottom-full hidden group-hover:inline-block w-auto text-white text-sm shadow-lg mb-3">
               {link.label}
             </span>
           </a>
