@@ -9,8 +9,8 @@ function App() {
   return (
     <Background>
       <Header />
-      {/* <BannerText /> */}
       <Projects />
+      <BannerText />
     </Background>
   );
 }

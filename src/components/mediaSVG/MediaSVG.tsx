@@ -44,6 +44,7 @@ const MediaSVG: React.FC = () => {
             onMouseLeave={handleMouseLeave}
             className="group hover:scale-110 transform transition-transform duration-300 hover:shadow-lg"
             target='_blank'
+            rel="noopener noreferrer"
           >
             <img src={link.src} alt={link.alt} className="h-7 w-7" />
             <span className="absolute bottom-full hidden group-hover:inline-block w-auto text-white text-sm shadow-lg mb-3">

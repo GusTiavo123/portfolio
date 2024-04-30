@@ -1,5 +1,5 @@
 /* Bg external gradient*/
 .custom-mask {
-    -webkit-mask-image: radial-gradient(circle closest-side, #0f0f0f 50%, transparent 170%);
-    mask-image: radial-gradient(circle closest-side, #0f0f0f 50%, transparent 170%);
+    -webkit-mask-image: radial-gradient(circle closest-side, #0f0f0f 50%, transparent 150%);
+    mask-image: radial-gradient(circle closest-side, #0f0f0f 50%, transparent 150%);
 }

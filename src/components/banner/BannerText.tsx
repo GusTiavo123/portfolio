@@ -2,7 +2,7 @@ import "./bannerAnimation.css"; // Asegúrate de crear este archivo y añadirlo 
 
 const BannerText = () => {
   return (
-    <div className="overflow-hidden w-screen my-36">
+    <div className="overflow-hidden w-screen">
       <div className="banner-move-left-to-right text-white sm:text-4xl lg:text-7xl font-semibold">
         NEXTJS - REACT - JAVASCRIPT - HTML - CSS - TAILWIND - UX/UI -&nbsp;
         NEXTJS - REACT - JAVASCRIPT - HTML - CSS - TAILWIND - UX/UI -&nbsp;
