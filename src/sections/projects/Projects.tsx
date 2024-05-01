@@ -2,7 +2,7 @@ import Project from "../../components/project/Project";
 
 export default function Projects() {
   return (
-    <section id="projects" className="max-w-7xl z-10 my-48">
+    <section id="projects" className="max-w-7xl z-10 my-36">
       <h2 className="text-white text-3xl font-bold my-8">{"<Projects />"}</h2>
       <div className="space-y-14">
         <Project
