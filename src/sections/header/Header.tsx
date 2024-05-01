@@ -1,4 +1,4 @@
-import MediaSVG from "../../components/mediaSVG/MediaSVG";
+import MediaSVG from "../../components/SVGs/MediaSVG";
 import { TextGenerateEffect } from "../../effects/TextGenerateEffect";
 import Navbar from "../navbar/Navbar";
 
