@@ -1,3 +1,4 @@
+import React, { useRef, useState } from 'react';
 import FadeInWhenVisible from "../../effects/FadeInWhenVisible";
 
 type ProjectProps = {
@@ -10,7 +11,6 @@ type ProjectProps = {
   repoUrl: string;
 };
 
-
 const Project: React.FC<ProjectProps> = ({
   src,
   title,
@@ -19,22 +19,47 @@ const Project: React.FC<ProjectProps> = ({
   liveUrl,
   repoUrl
 }) => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+    if (videoRef.current) {
+      videoRef.current.play();
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+    if (videoRef.current) {
+      videoRef.current.pause();
+    }
+  };
+
   return (
     <FadeInWhenVisible>
-      <div className="flex w-full bg-custom-box-dark rounded-xl border-t-2 border-custom-box-border px-7 py-5">
-        <div className="flex flex-1 items-center justify-center">
+      <div className="flex w-full">
+        <div className="flex flex-1 items-center justify-center relative"
+             onMouseEnter={handleMouseEnter}
+             onMouseLeave={handleMouseLeave}>
           <video
+            ref={videoRef}
             preload="metadata"
-            className="min-h-[300px] h-auto rounded-xl"
+            className="h-auto rounded-s-xl border-t-2 border-custom-box-border transition-opacity duration-300"
             loop
             muted
-            autoPlay
+            style={{ opacity: isHovered ? 1 : 0.7 }}
           >
             <source src={src} type="video/mp4" />
-            Your browser do not support videos
+            Your browser does not support videos.
           </video>
+          {!isHovered && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <span className="text-7xl text-white opacity-75">&#9658;</span> 
+            </div>
+          )}
         </div>
-        <div className="flex flex-1 flex-col pl-6">
+        <div className="flex flex-1 flex-col pl-6 bg-custom-box-dark rounded-e-xl border-t-2 border-custom-box-border px-7 py-5">
           <h3 className="text-xl text-white mb-2">{title}</h3>
           <p className="text-white mb-2">{description}</p>
           <ul className="list-disc list-inside mb-2 text-white">

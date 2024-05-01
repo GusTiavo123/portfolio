@@ -6,7 +6,7 @@ function Header() {
   const words = `Fullstack Web Developer`
 
   return (
-    <header className="max-w-7xl space-y-36 z-10 ">
+    <header className="max-w-7xl space-y-36 z-10">
       <Navbar />
       <div className="flex md:flex-row">
         <div className="text-white flex-1">
