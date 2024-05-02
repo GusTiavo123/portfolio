@@ -4,7 +4,7 @@ import FadeInWhenVisible from "../../effects/FadeInWhenVisible";
 export default function Projects() {
   return (
     <section id="projects" className="max-w-7xl z-10 my-44">
-      <h2 className="text-white text-3xl font-bold my-8">{"<Projects />"}</h2>
+      <h2 className="text-white text-4xl font-bold my-8">{"<Projects />"}</h2>
       <FadeInWhenVisible>
         <div className="flex">
           <div className="flex flex-1 mr-8 w-full">
