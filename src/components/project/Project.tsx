@@ -87,9 +87,9 @@ const Project: React.FC<ProjectProps> = ({
         <p className="text-custom-gray text-md mb-8">{description}</p>
         <div className="flex justify-between mt-auto">
           <p className="text-white italic">{technologies}</p>
-          <div className="flex">
+          <div className="flex space-x-4">
             {svgs.map((svg, index) => (
-              <div key={index} className="flex flex-row items-center mx-2">
+              <div key={index} className="flex flex-row items-center">
                 <SVGIcon {...svg} />
               </div>
             ))}
