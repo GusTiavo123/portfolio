@@ -1,6 +1,7 @@
 import FadeInWhenVisible from "../../effects/FadeInWhenVisible";
 import { motion } from "framer-motion";
 import RandomTypewriter from "../../effects/RandomTypewritter";
+import InfoBlock from "../../components/infoBlock/InfoBlock";
 
 const About = () => {
   const containerVariants = {
@@ -26,35 +27,39 @@ const About = () => {
   };
 
   return (
-    <section
-      id="about"
-      className="max-w-7xl mx-auto mt-44 z-10  p-10"
-    >
+    <section id="about" className="max-w-7xl mx-auto mt-44 z-10">
       <RandomTypewriter text="<About />" />
       <motion.div
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="space-y-5"
+        className="mt-8"
       >
-        <FadeInWhenVisible>
+        <FadeInWhenVisible viewPoint={0.3}>
           <motion.div
             variants={itemVariants}
-            className="flex flex-col md:flex-row items-center my-10"
+            className="flex flex-col md:flex-row items-center"
           >
             <div className="w-full md:w-1/2">
               <img
                 src="avatar.jpeg"
-                alt="About image"
+                alt="Profile avatar image"
                 className="rounded-full"
               />
             </div>
-            <div className="text-white text-lg leading-relaxed p-4 md:p-8 ml-8 bg-custom-box-dark rounded-xl border-t-2 border-custom-box-border">
-              <h2 className="text-white text-3xl font-bold">Gustavo Aramayo </h2>
-              <p className="italic">
-                "Inicié mi carrera como desarrollador web en los primeros días
-                de JavaScript, creando interfaces simples pero efectivas."
-              </p>
+            <div className="flex flex-col">
+              <InfoBlock
+                title="Fullstack Developer"
+                text="I've focused on mastering both front-end and back-end to create effective and complete solutions. My goal is always to enhance user interaction through better interfaces."
+              />
+              <InfoBlock
+                title="Passion for AI"
+                text="My interest in artificial intelligence led me to explore neural networks and data science deeply. This passion enhanced my problem-solving skills and ability to innovate."
+              />
+              <InfoBlock
+                title="Music and training"
+                text="Beyond coding, I enjoy techno music and gym training. Both activities refresh my energy and boost my creativity, helping maintain a healthy balance life."
+              />
             </div>
           </motion.div>
         </FadeInWhenVisible>

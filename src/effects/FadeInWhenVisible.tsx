@@ -3,12 +3,16 @@ import { useInView } from "react-intersection-observer";
 
 type FadeInWhenVisibleProps = {
   children: React.ReactNode;
+  viewPoint?: number;
 };
 
-const FadeInWhenVisible: React.FC<FadeInWhenVisibleProps> = ({ children }) => {
+const FadeInWhenVisible: React.FC<FadeInWhenVisibleProps> = ({
+  children,
+  viewPoint = 0.1,
+}) => {
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 0.1,
+    threshold: viewPoint,
   });
 
   return (
