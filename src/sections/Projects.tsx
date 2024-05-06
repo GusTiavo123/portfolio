@@ -1,11 +1,12 @@
-import Project from "../../components/project/Project";
-import FadeInWhenVisible from "../../effects/FadeInWhenVisible";
-import RandomTypewriter from "../../effects/RandomTypewritter";
+import Project from "../components/project/Project";
+import FadeInWhenVisible from "../effects/FadeInWhenVisible";
+import RandomTypewriter from "../effects/RandomTypewritter";
+
 
 export default function Projects() {
   return (
     <section id="projects" className="max-w-7xl z-10 mt-44">
-      <RandomTypewriter text="<Projects />" />
+      <RandomTypewriter text="<Recent Work />" />
       <FadeInWhenVisible>
         <div className="flex mt-8">
           <div className="flex flex-1 mr-8 w-full">

@@ -1,10 +1,11 @@
 import "./App.css";
 import "./App.css";
 import BannerText from "./components/banner/BannerText";
-import About from "./sections/about/About";
-import Background from "./sections/background/Background";
-import Header from "./sections/header/Header";
-import Projects from "./sections/projects/Projects";
+import About from "./sections/About";
+import Background from "./sections/Background";
+import Header from "./sections/Header";
+import Projects from "./sections/Projects";
+
 
 function App() {
   return (

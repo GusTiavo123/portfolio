@@ -11,7 +11,8 @@ const RandomTypewriter: React.FC<RandomTypewriterProps> = ({ text, speed = 50 })
   const [display, setDisplay] = useState(() => Array(text.length).fill(''));
   
   const { ref: inViewRef, inView } = useInView({
-    triggerOnce: true
+    triggerOnce: true,
+    threshold: 1  
   });
 
 
@@ -47,7 +48,7 @@ const RandomTypewriter: React.FC<RandomTypewriterProps> = ({ text, speed = 50 })
   return (
     <motion.div
       ref={inViewRef}
-      className="text-white text-4xl font-bold mt-8 mb-1"
+      className="text-white text-4xl font-bold mt-8"
       initial={{ opacity: 0 }}
       animate={{ opacity: inView ? 1 : 0 }}
       transition={{ duration: 0.1 }}  

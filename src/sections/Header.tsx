@@ -1,6 +1,6 @@
-import MediaSVG from "../../components/SVGs/MediaSVG";
-import { TextGenerateEffect } from "../../effects/TextGenerateEffect";
-import Navbar from "../navbar/Navbar";
+import MediaSVG from "../components/SVGs/MediaSVG";
+import { TextGenerateEffect } from "../effects/TextGenerateEffect";
+import Navbar from "./Navbar";
 
 function Header() {
   const words = `Fullstack Web Developer`
