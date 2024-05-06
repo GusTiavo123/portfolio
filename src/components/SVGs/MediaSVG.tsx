@@ -1,6 +1,5 @@
-import { SVGprops } from '../../types/types';
-import SVGIcon from './SVGIcon';
-
+import { SVGprops } from "../../types/types";
+import SVGIcon from "./SVGIcon";
 
 const svgs: SVGprops[] = [
   {
@@ -33,6 +32,6 @@ const MediaSVG: React.FC = () => {
       ))}
     </div>
   );
-}
+};
 
 export default MediaSVG;

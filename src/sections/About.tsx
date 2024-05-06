@@ -7,7 +7,7 @@ const About: React.FC = () => {
   return (
     <section id="about" className="max-w-7xl mx-auto mt-44 z-10">
       <RandomTypewriter text="<About Me/>" />
-      <div className="mt-8 flex flex-col md:flex-row items-center">
+      <div className="mt-9 flex flex-col md:flex-row items-center">
         <div className="w-full md:w-1/2 relative">
           <AboutImage />
         </div>

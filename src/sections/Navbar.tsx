@@ -10,7 +10,7 @@ const Navbar = () => {
           <a href="#about">{"<About Me/>"}</a>
         </li>
         <li className="text-white text-xl ml-6 cursor-pointer transform hover:-translate-y-1 hover:text-gray-300 transition duration-400">
-          <a href="/contact">{"<Hire Me />"}</a>
+          <a href="#contact">{"<Hire Me />"}</a>
         </li>
       </ul>
     </nav>

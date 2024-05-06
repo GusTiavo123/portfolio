@@ -8,7 +8,7 @@ export default function Projects() {
     <section id="projects" className="max-w-7xl z-10 mt-44">
       <RandomTypewriter text="<Recent Work />" />
       <FadeInWhenVisible>
-        <div className="flex mt-8">
+        <div className="flex mt-9">
           <div className="flex flex-1 mr-8 w-full">
             <Project
               src="project1.mp4"
