@@ -13,18 +13,18 @@ const About: React.FC = () => {
         </div>
         <div className="flex flex-col">
           <InfoBlock
-            title="Fullstack Developer"
+            title="Software Engineer ⚙️"
+            text="With 75% of my career completed, I focus on logical reasoning and modular design to develop scalable and maintainable solutions, crucial for technological adaptability."
+          />
+
+          <InfoBlock
+            title="Fullstack Developer 🖥️"
             text="I've focused on mastering both front-end and back-end to create effective and complete solutions. My goal is always to enhance user interaction through better interfaces."
           />
 
           <InfoBlock
-            title="Passion for AI"
+            title="Passion for AI 🤖"
             text="My interest in artificial intelligence led me to explore neural networks and data science deeply. This passion enhanced my problem-solving skills and ability to innovate."
-          />
-
-          <InfoBlock
-            title="Music and Training"
-            text="Beyond coding, I enjoy techno music and gym training. Both activities refresh my energy and boost my creativity, helping maintain a healthy balance life."
           />
         </div>
       </div>
