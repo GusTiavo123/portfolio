@@ -83,7 +83,7 @@ const Project: React.FC<ProjectProps> = ({
         </div>
       </div>
       <div className="flex flex-col bg-custom-box-dark rounded-b-xl min-h-48 px-6 py-3">
-        <h3 className="text-2xl text-white font-semi-bold mb-2">{title}</h3>
+        <h3 className="text-2xl text-white font-bold mb-2">{title}</h3>
         <p className="text-custom-gray text-md mb-8">{description}</p>
         <div className="flex justify-between mt-auto">
           <p className="text-white italic">{technologies}</p>

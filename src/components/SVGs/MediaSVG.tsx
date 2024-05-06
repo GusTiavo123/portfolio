@@ -25,7 +25,7 @@ const svgs: SVGprops[] = [
 
 const MediaSVG: React.FC = () => {
   return (
-    <div className="flex px-4 bg-custom-box-dark rounded-full border-t-2 border-custom-box-border w-fit">
+    <div className="flex px-4 bg-custom-box-dark rounded-full border-t-2 border-custom-box-border w-fit mb-1">
       {svgs.map((svg, index) => (
         <div key={index} className="inline-flex flex-col items-center m-2">
           <SVGIcon {...svg} />
