@@ -6,17 +6,20 @@ import Background from "./sections/Background";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
 import Header from "./sections/Header";
+import Navbar from "./sections/Navbar";
 import Projects from "./sections/Projects";
-
 
 function App() {
   return (
     <Background>
-      <Header />
-      <BannerText />
-      <Projects />
-      <About />
-      <Contact />
+      <Navbar />
+      <main className="flex flex-col items-center">
+        <Header />
+        <BannerText />
+        <Projects />
+        <About />
+        <Contact />
+      </main>
       <Footer />
     </Background>
   );

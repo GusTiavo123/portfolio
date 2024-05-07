@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
 
   return (
     <section id="contact" className="text-white max-w-7xl mx-auto my-44 z-10">
-      <RandomTypewriter text="<Hire Me />" />
+      <RandomTypewriter text="<Contact />" />
       <FadeInWhenVisible>
         <div className="flex w-full mt-9">
           <ContactForm />

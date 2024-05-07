@@ -52,7 +52,7 @@ const Project: React.FC<ProjectProps> = ({
   };
 
   return (
-    <div className="flex w-full flex-col">
+    <article className="flex w-full flex-col">
       <div
         className="relative flex items-center justify-center rounded-t-xl bg-custom-box-dark pt-3 px-3 border-t-2 border-custom-box-border"
         onMouseEnter={handleMouseEnter}
@@ -96,7 +96,7 @@ const Project: React.FC<ProjectProps> = ({
           </div>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 
