@@ -1,7 +1,7 @@
 const Navbar = () => {
   return (
     <nav className="flex max-w-7xl justify-between items-center mx-auto mt-2 mb-36 ">
-      <header className="text-white font-bold text-3xl">Gustavo Aramayo</header>
+      <header className="text-white font-bold text-3xl z-10">Gustavo Aramayo</header>
       <ul className="flex">
         <li className="text-white text-xl mr-6 cursor-pointer transform hover:-translate-y-1 hover:text-gray-300 transition duration-400">
           <a href="#projects">{"<Projects />"}</a>

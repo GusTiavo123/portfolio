@@ -1,20 +1,18 @@
-import "./App.css";
-import "./App.css";
 import BannerText from "./components/banner/BannerText";
-import About from "./sections/About";
-import Background from "./sections/Background";
-import Contact from "./sections/Contact";
-import Footer from "./sections/Footer";
-import Header from "./sections/Header";
-import Navbar from "./sections/Navbar";
-import Projects from "./sections/Projects";
+import About from "./components/sections/About";
+import Background from "./components/sections/Background";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/sections/Footer";
+import Hero from "./components/sections/Hero";
+import Navbar from "./components/sections/Navbar";
+import Projects from "./components/sections/Projects";
 
 function App() {
   return (
     <Background>
       <Navbar />
       <main className="flex flex-col items-center">
-        <Header />
+        <Hero />
         <BannerText />
         <Projects />
         <About />

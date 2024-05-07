@@ -1,4 +1,4 @@
-import Project from "../components/project/Project";
+import Project from "../project/Project";
 import FadeInWhenVisible from "../effects/FadeInWhenVisible";
 import RandomTypewriter from "../effects/RandomTypewritter";
 
@@ -11,7 +11,7 @@ export default function Projects() {
         <div className="flex mt-9">
           <div className="flex flex-1 mr-8 w-full">
             <Project
-              src="project1.mp4"
+              src="videos/project1.mp4"
               title="IdeaNova"
               description="Website App for a fictional company featuring a contact form and modern login via NextAuth credentials. Authenticated users can access an internal blog to create and delete posts."
               technologies={"Next.js - CSS - HTML - MongoDB - NextAuth"}
@@ -21,7 +21,7 @@ export default function Projects() {
           </div>
           <div className="flex flex-1 ml-8 w-full">
             <Project
-              src="project2.mp4"
+              src="videos/project2.mp4"
               title="Nextxkcd"
               description="Web application that provides a comic browsing experience, featuring a custom scraper for XKCD comics. Users can search comics, toggle between night and light modes for enhanced readability,"
               technologies={"Next.js - TailwindCSS - ShadcnUI - Scraping"}
@@ -35,7 +35,7 @@ export default function Projects() {
         <div className="flex mt-16">
           <div className="flex flex-1 mr-8 w-full">
             <Project
-              src="project3.mp4"
+              src="videos/project3.mp4"
               title="MovieCloud"
               description="Web application that provides detailed information on movies and TV series, utilizing the OMDb API.The platform ensures a seamless and engaging UX/UI, enabling effortless exploration and discovery of cinematic content."
               technologies={"React - CSS - HTML - API"}

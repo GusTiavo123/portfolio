@@ -25,13 +25,13 @@ const Project: React.FC<ProjectProps> = ({
   const svgs: SVGprops[] = [
     {
       href: liveUrl,
-      src: "website.svg",
+      src: "svg/website.svg",
       alt: "website link",
       label: "Website",
     },
     {
       href: repoUrl,
-      src: "code.svg",
+      src: "svg/code.svg",
       alt: "code link",
       label: "Code",
     },

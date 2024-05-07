@@ -1,8 +1,8 @@
-import MediaSVG from "../components/SVGs/MediaSVG";
+import MediaSVG from "../SVGs/MediaSVG";
 import { TextGenerateEffect } from "../effects/TextGenerateEffect";
 
 
-function Header() {
+function Hero() {
   const words = `Fullstack Web Developer`
 
   return (
@@ -29,4 +29,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default Hero;

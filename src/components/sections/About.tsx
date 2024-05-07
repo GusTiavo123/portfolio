@@ -1,5 +1,5 @@
-import AboutImage from "../components/aboutImage/AboutImage";
-import InfoBlock from "../components/infoBlock/InfoBlock";
+import AboutImage from "../aboutImage/AboutImage";
+import InfoBlock from "../infoBlock/InfoBlock";
 import RandomTypewriter from '../effects/RandomTypewritter';
 
 const About: React.FC = () => {

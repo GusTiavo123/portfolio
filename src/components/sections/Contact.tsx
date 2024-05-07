@@ -1,5 +1,5 @@
-import ContactForm from "../components/contact/ContactForm";
-import SocialLink from "../components/contact/SocialLinks";
+import ContactForm from "../contact/ContactForm";
+import SocialLink from "../contact/SocialLinks";
 import FadeInWhenVisible from "../effects/FadeInWhenVisible";
 import RandomTypewriter from "../effects/RandomTypewritter";
 
@@ -13,17 +13,17 @@ const Contact: React.FC = () => {
   const socialLinks: SocialLink[] = [
     {
       url: "https://www.linkedin.com/in/gustavo-aramayo-b80b4b166/",
-      icon: "linkedin.svg",
+      icon: "svg/linkedin.svg",
       alt: "SVG Linkedin",
     },
     {
       url: "https://github.com/GusTiavo123",
-      icon: "github.svg",
+      icon: "svg/github.svg",
       alt: "SVG Github",
     },
     {
-      url: "https://www.linkedin.com/in/gustavo-aramayo-b80b4b166/",
-      icon: "cv.svg",
+      url: "https://drive.google.com/file/d/1IG5HPqZrXCeJXoMHHys2kveV6nlQwvV0/view?usp=drive_link",
+      icon: "svg/cv.svg",
       alt: "SVG CV",
     },
   ];

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import FadeInWhenVisible from "../../effects/FadeInWhenVisible";
+import FadeInWhenVisible from "../effects/FadeInWhenVisible";
 import "./aboutImage.css";
 
 interface Position {

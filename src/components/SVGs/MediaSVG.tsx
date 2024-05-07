@@ -4,19 +4,19 @@ import SVGIcon from "./SVGIcon";
 const svgs: SVGprops[] = [
   {
     href: "https://www.linkedin.com/in/gustavo-aramayo-b80b4b166/",
-    src: "linkedin.svg",
+    src: "svg/linkedin.svg",
     alt: "LinkedIn",
     label: "LinkedIn",
   },
   {
     href: "https://github.com/GusTiavo123",
-    src: "github.svg",
+    src: "svg/github.svg",
     alt: "Github",
     label: "GitHub",
   },
   {
-    href: "/your-cv-link",
-    src: "cv.svg",
+    href: "https://drive.google.com/file/d/1IG5HPqZrXCeJXoMHHys2kveV6nlQwvV0/view?usp=drive_link",
+    src: "svg/cv.svg",
     alt: "CV",
     label: "Download",
   },
