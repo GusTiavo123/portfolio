@@ -5,15 +5,15 @@ const Navbar = () => {
       <ul className="flex md:text-xl text-white">
         <li className="md:mr-6 mr-3 cursor-pointer transform hover:-translate-y-1 hover:text-gray-300 transition duration-300">
           <a href="#projects" className="sm:inline hidden">{"<Projects />"}</a>
-          <a href="#projects" className="sm:hidden">/Projects</a>
+          <a href="#projects" className="sm:hidden text-custom-green">/Projects</a>
         </li>
         <li className="cursor-pointer transform hover:-translate-y-1 hover:text-gray-300 transition duration-300 z-10">
           <a href="#about" className="sm:inline hidden">{"<About />"}</a>
-          <a href="#about" className="sm:hidden">/About</a>
+          <a href="#about" className="sm:hidden text-custom-green">/About</a>
         </li>
         <li className="md:ml-6 ml-3 cursor-pointer transform hover:-translate-y-1 hover:text-gray-300 transition duration-300 z-10">
           <a href="#contact" className="sm:inline hidden">{"<Contact />"}</a>
-          <a href="#contact" className="sm:hidden">/Contact</a>
+          <a href="#contact" className="sm:hidden text-custom-green">/Contact</a>
         </li>
       </ul>
     </nav>

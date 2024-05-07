@@ -1,12 +1,11 @@
 import MediaSVG from "../SVGs/MediaSVG";
 import { TextGenerateEffect } from "../effects/TextGenerateEffect";
 
-
 function Hero() {
-  const words = `Fullstack Web Developer`
+  const words = `Fullstack Web Developer`;
 
   return (
-    <div className="max-w-7xl space-y-36 z-10">
+    <div className="md:max-w-7xl max-w-5xl space-y-36 z-10">
       <section className="flex md:flex-row">
         <article className="text-white flex-1">
           <MediaSVG /> 
@@ -17,7 +16,7 @@ function Hero() {
             and user experience, I turn ideas into impactful digital realities.
           </p>
         </article>
-        <div className="flex-1 flex items-center justify-center">
+        <div className="flex-1 items-center justify-center hidden md:flex">
           <img
             src="computer.gif"
             alt="Computer dance gif"
@@ -30,3 +29,4 @@ function Hero() {
 }
 
 export default Hero;
+
