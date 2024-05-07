@@ -1,16 +1,19 @@
 const Navbar = () => {
   return (
-    <nav className="flex max-w-7xl justify-between items-center mx-auto mt-2 mb-36 ">
-      <header className="text-white font-bold text-3xl z-10">Gustavo Aramayo</header>
-      <ul className="flex">
-        <li className="text-white text-xl mr-6 cursor-pointer transform hover:-translate-y-1 hover:text-gray-300 transition duration-400">
-          <a href="#projects">{"<Projects />"}</a>
+    <nav className="flex md:max-w-7xl max-w-5xl justify-between items-center mx-auto mt-2 mb-36 z-10">
+      <header className="text-white font-bold z-10 md:text-3xl text-2xl">Gustavo Aramayo</header>
+      <ul className="flex md:text-xl text-white">
+        <li className="md:mr-6 mr-3 cursor-pointer transform hover:-translate-y-1 hover:text-gray-300 transition duration-300">
+          <a href="#projects" className="sm:inline hidden">{"<Projects />"}</a>
+          <a href="#projects" className="sm:hidden">/Projects</a>
         </li>
-        <li className="text-white text-xl cursor-pointer transform hover:-translate-y-1 hover:text-gray-300 transition duration-400">
-          <a href="#about">{"<About />"}</a>
+        <li className="cursor-pointer transform hover:-translate-y-1 hover:text-gray-300 transition duration-300 z-10">
+          <a href="#about" className="sm:inline hidden">{"<About />"}</a>
+          <a href="#about" className="sm:hidden">/About</a>
         </li>
-        <li className="text-white text-xl ml-6 cursor-pointer transform hover:-translate-y-1 hover:text-gray-300 transition duration-400 z-10">
-          <a href="#contact">{"<Contact />"}</a>
+        <li className="md:ml-6 ml-3 cursor-pointer transform hover:-translate-y-1 hover:text-gray-300 transition duration-300 z-10">
+          <a href="#contact" className="sm:inline hidden">{"<Contact />"}</a>
+          <a href="#contact" className="sm:hidden">/Contact</a>
         </li>
       </ul>
     </nav>
