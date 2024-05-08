@@ -20,7 +20,7 @@ const ContactForm: React.FC = () => {
         alt="Your Description"
         className="absolute top-5 right-3 h-6 w-6 md:top-5 md:right-4 md:h-8 md:w-8"
       />
-      <span className="text-custom-gray text-sm md:text-base w-full">
+      <span className="text-custom-gray text-xs md:text-base w-full">
         Let's work together!
       </span>
       <input
@@ -28,7 +28,7 @@ const ContactForm: React.FC = () => {
         type="text"
         defaultValue="gusaramayo2010@hotmail.com"
         readOnly
-        className="text-white font-bold text-lg w-full bg-custom-box-dark rounded-xl cursor-text object-fil"
+        className="text-white font-bold md:text-2xl text-lg w-full bg-custom-box-dark rounded-xl cursor-text object-fil"
         onClick={(e) => e.stopPropagation()}
         onFocus={(e) => e.currentTarget.select()}
       />
