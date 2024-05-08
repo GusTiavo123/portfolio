@@ -9,6 +9,7 @@ type ProjectProps = {
   technologies: string;
   liveUrl: string;
   repoUrl: string;
+  poster: string;
 };
 
 const Project: React.FC<ProjectProps> = ({
@@ -18,6 +19,7 @@ const Project: React.FC<ProjectProps> = ({
   technologies,
   liveUrl,
   repoUrl,
+  poster
 }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isHovered, setIsHovered] = useState(false);
@@ -82,6 +84,7 @@ const Project: React.FC<ProjectProps> = ({
             style={{ opacity: isHovered ? 1 : 0.7 }}
             loop
             muted
+            poster={poster}
             controls={false}
           >
             <source src={src} type="video/mp4" />

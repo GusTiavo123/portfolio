@@ -16,6 +16,7 @@ export default function Projects() {
               technologies={"Next.js - CSS - HTML - MongoDB - NextAuth"}
               liveUrl="https://idea-nova.vercel.app/"
               repoUrl="https://github.com/GusTiavo123/IdeaNova"
+              poster="videos/project1.png"
             />
           </div>
           <div className="w-full mb-8 md:mb-0 md:ml-8 md:flex-1">
@@ -26,6 +27,7 @@ export default function Projects() {
               technologies={"Next.js - TailwindCSS - ShadcnUI - Scraping"}
               liveUrl="https://github.com/GusTiavo123/Comics-page"
               repoUrl="https://github.com/GusTiavo123/Comics-page"
+              poster="videos/project2.png"
             />
           </div>
         </div>
@@ -40,6 +42,7 @@ export default function Projects() {
               technologies={"React - CSS - HTML - OMDbAPI"}
               liveUrl="https://github.com/GusTiavo123/moviecloud"
               repoUrl="https://github.com/GusTiavo123/moviecloud"
+              poster="videos/project3.png"
             />
           </div>
           <div className="hidden md:flex md:flex-col md:flex-1 md:items-center md:justify-center md:ml-8 bg-custom-box-dark rounded-xl border-t-2 border-custom-box-border">
