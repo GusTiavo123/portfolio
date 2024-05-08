@@ -83,6 +83,7 @@ const Project: React.FC<ProjectProps> = ({
             style={{ opacity: isHovered ? 1 : 0.7 }}
             loop
             muted
+            controls={false}
           >
             <source src={src} type="video/mp4" />
             Your browser does not support videos.
