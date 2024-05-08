@@ -3,11 +3,6 @@ import { useRef } from "react";
 const ContactForm: React.FC = () => {
   const emailRef = useRef<HTMLInputElement>(null);
 
-  const isMobileScreenSize = () => {
-    const maxWidthForMobile = 768;
-    return window.innerWidth <= maxWidthForMobile;
-  };
-
   const openEmailClient = () => {
     const email = "gusaramayo2010@hotmail.com";
     if (email) {
