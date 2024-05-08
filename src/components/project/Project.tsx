@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import { SVGprops } from "../../types/types";
 import SVGIcon from "../SVGs/SVGIcon";
 
@@ -21,6 +21,7 @@ const Project: React.FC<ProjectProps> = ({
 }) => {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isHovered, setIsHovered] = useState(false);
+  const isMobile = window.innerWidth > 1024 ? false : true;
 
   const svgs: SVGprops[] = [
     {
@@ -28,26 +29,41 @@ const Project: React.FC<ProjectProps> = ({
       src: "svg/website.svg",
       alt: "website link",
       label: "Website",
+      className: "h-7 w-7"
     },
     {
       href: repoUrl,
       src: "svg/code.svg",
       alt: "code link",
       label: "Code",
+      className: "h-7 w-7"
     },
   ];
 
+
   const handleMouseEnter = () => {
-    setIsHovered(true);
-    if (videoRef.current) {
-      videoRef.current.play();
+    console.log(isMobile)
+    if (!isMobile) {
+      setIsHovered(true);
+      videoRef.current?.play();
     }
   };
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
-    if (videoRef.current) {
-      videoRef.current.pause();
+    if (!isMobile) {
+      setIsHovered(false);
+      videoRef.current?.pause();
+    }
+  };
+
+  const handleClick = () => {
+    if (isMobile) {
+      setIsHovered(!isHovered);
+      if (!isHovered) {
+        videoRef.current?.play();
+      } else {
+        videoRef.current?.pause();
+      }
     }
   };
 
@@ -57,6 +73,7 @@ const Project: React.FC<ProjectProps> = ({
         className="relative flex items-center justify-center rounded-t-xl bg-custom-box-dark pt-3 px-3 border-t-2 border-custom-box-border"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        onClick={handleClick}
       >
         <div className="h-auto w-full">
           <video

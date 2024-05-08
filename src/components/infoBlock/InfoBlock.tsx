@@ -8,9 +8,11 @@ interface InfoBlockProps {
 }
 
 const InfoBlock: React.FC<InfoBlockProps> = ({ title, text }) => {
+  const initialThreshold = window.innerWidth > 1024 ? 1 : 0.5;
+
   const { ref, inView } = useInView({
     triggerOnce: true,
-    threshold: 1
+    threshold: initialThreshold
   });
   const controls = useAnimation();
 
@@ -32,12 +34,13 @@ const InfoBlock: React.FC<InfoBlockProps> = ({ title, text }) => {
       });
     }
   }, [controls, inView]);
+
   return (
-    <motion.article ref={ref} animate={controls}>
-    <div className="leading-relaxed p-4 md:p-8 ml-8 mb-8 bg-custom-box-dark rounded-xl border-t-2 border-custom-box-border hover:scale-105  transition-all duration-300 hover:shadow-inner hover:shadow-innerit">
-      <h2 className="text-white text-3xl font-bold">{title}</h2>
-      <p className="italic text-custom-gray text-md mt-2">{text}</p>
-    </div>
+    <motion.article ref={ref} animate={controls} initial={{ x: 100, opacity: 0 }}>
+      <div className="leading-relaxed p-4 md:p-8 md:mb-8 md:mt-0 mt-8 bg-custom-box-dark rounded-xl border-t-2 border-custom-box-border hover:scale-105 transition-all duration-300 hover:shadow-inner">
+        <h3 className="text-white text-2xl font-bold">{title}</h3>
+        <p className="italic text-custom-gray text-md mt-2">{text}</p>
+      </div>
     </motion.article>
   );
 };

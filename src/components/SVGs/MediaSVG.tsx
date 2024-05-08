@@ -7,18 +7,21 @@ const svgs: SVGprops[] = [
     src: "svg/linkedin.svg",
     alt: "LinkedIn",
     label: "LinkedIn",
+    className: "h-7 w-7"
   },
   {
     href: "https://github.com/GusTiavo123",
     src: "svg/github.svg",
     alt: "Github",
     label: "GitHub",
+    className: "h-7 w-7"
   },
   {
     href: "https://drive.google.com/file/d/1IG5HPqZrXCeJXoMHHys2kveV6nlQwvV0/view?usp=drive_link",
     src: "svg/cv.svg",
     alt: "CV",
     label: "Download",
+    className: "h-7 w-7"
   },
 ];
 

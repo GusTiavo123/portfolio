@@ -48,7 +48,7 @@ const RandomTypewriter: React.FC<RandomTypewriterProps> = ({ text, speed = 50 })
   return (
     <motion.div
       ref={inViewRef}
-      className="text-white text-4xl font-bold mt-9"
+      className="text-white text-3xl md:text-4xl font-bold mt-9"
       initial={{ opacity: 0 }}
       animate={{ opacity: inView ? 1 : 0 }}
       transition={{ duration: 0.1 }}  

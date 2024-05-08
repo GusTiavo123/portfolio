@@ -5,13 +5,13 @@ import RandomTypewriter from '../effects/RandomTypewritter';
 const About: React.FC = () => {
  
   return (
-    <section id="about" className="max-w-7xl mx-auto mt-44 z-10">
+    <section id="about" className="max-w-7xl mx-auto lg:mt-44 md:mt-40 mt-32 z-10">
       <RandomTypewriter text="<About />" />
-      <div className="mt-9 flex flex-col md:flex-row items-center">
-        <div className="w-full md:w-1/2 relative">
+      <div className="mt-6 md:mt-9 flex flex-col md:flex-row items-center">
+        <div className="w-full lg:w-1/2 relative">
           <AboutImage />
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col md:ml-8">
           <InfoBlock
             title="Software Engineer ⚙️"
             text="With 75% of my career completed, I focus on logical reasoning and modular design to develop scalable and maintainable solutions, crucial for technological adaptability."

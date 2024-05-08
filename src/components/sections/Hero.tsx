@@ -5,12 +5,12 @@ function Hero() {
   const words = `Fullstack Web Developer`;
 
   return (
-    <div className="md:max-w-7xl max-w-5xl space-y-36 z-10">
+    <div className="md:max-w-7xl max-w-3xl space-y-36 z-10">
       <section className="flex md:flex-row">
         <article className="text-white flex-1">
           <MediaSVG /> 
           <TextGenerateEffect words={words}/>
-          <p className="text-xl text-custom-gray mt-10">
+          <p className="text-xl text-custom-gray md:mt-10 mt-5">
             My name is Gustavo, and I blend art and logic to craft web solutions
             that are as beautiful as they are functional. Driven by innovation
             and user experience, I turn ideas into impactful digital realities.

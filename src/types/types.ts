@@ -3,5 +3,6 @@ export type SVGprops = {
     src: string,
     alt: string,
     label: string,
+    className?: string
 }
   

@@ -11,7 +11,7 @@ function App() {
   return (
     <Background>
       <Navbar />
-      <main className="flex flex-col items-center">
+      <main className="flex flex-col items-center justify-center">
         <Hero />
         <BannerText />
         <Projects />
