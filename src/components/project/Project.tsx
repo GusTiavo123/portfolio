@@ -80,6 +80,7 @@ const Project: React.FC<ProjectProps> = ({
         <div className="h-auto w-full">
           <video
             ref={videoRef}
+            preload="metadata"
             className="w-full rounded-xl transition-opacity duration-300"
             style={{ opacity: isHovered ? 1 : 0.7 }}
             loop
