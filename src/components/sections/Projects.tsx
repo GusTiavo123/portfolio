@@ -4,11 +4,14 @@ import RandomTypewriter from "../effects/RandomTypewritter";
 
 export default function Projects() {
   return (
-    <section id="projects" className="max-w-5xl md:max-w-7xl z-10 lg:mt-44 md:mt-40 mt-32">
+    <section
+      id="projects"
+      className="max-w-5xl md:max-w-7xl z-10 lg:mt-44 md:mt-40 mt-32"
+    >
       <RandomTypewriter text="<Projects />" />
-      <FadeInWhenVisible>
-        <div className="flex flex-col sm:flex-row mt-6 md:mt-9">
+      <div className="flex flex-col sm:flex-row mt-6 md:mt-9">
           <div className="w-full mb-8 md:mb-0 md:mr-8 md:flex-1">
+          <FadeInWhenVisible>
             <Project
               src="videos/project1.mp4"
               title="IdeaNova"
@@ -18,8 +21,10 @@ export default function Projects() {
               repoUrl="https://github.com/GusTiavo123/IdeaNova"
               poster="videos/project1.png"
             />
+            </FadeInWhenVisible>
           </div>
           <div className="w-full mb-8 md:mb-0 md:ml-8 md:flex-1">
+          <FadeInWhenVisible>
             <Project
               src="videos/project2.mp4"
               title="Nextxkcd"
@@ -29,9 +34,9 @@ export default function Projects() {
               repoUrl="https://github.com/GusTiavo123/Comics-page"
               poster="videos/project2.png"
             />
+            </FadeInWhenVisible>
           </div>
-        </div>
-      </FadeInWhenVisible>
+      </div>
       <FadeInWhenVisible>
         <div className="flex flex-col sm:flex-row md:mt-16">
           <div className="w-full md:mr-8 md:flex-1">
