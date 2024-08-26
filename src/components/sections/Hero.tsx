@@ -1,33 +1,9 @@
-import { useState } from "react";
 import MediaSVG from "../SVGs/MediaSVG";
 import { TextGenerateEffect } from "../effects/TextGenerateEffect";
-import ReactPlayer from "react-player";
-
-interface Position {
-  x: number;
-  y: number;
-}
+import GifImage from "../gifImage/GifImage";
 
 function Hero() {
   const words = `Fullstack Web Developer`;
-  const [playing, setPlaying] = useState(false);
-  const [hover, setHover] = useState<boolean>(false);
-  const [dialog, setDialog] = useState<String>("Play :D");
-  const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
-
-  const handleMouseMove = (
-    event: React.MouseEvent<HTMLImageElement, MouseEvent>
-  ) => {
-    setPosition({
-      x: event.clientX,
-      y: event.clientY,
-    });
-  };
-
-  const togglePlayPause = () => {
-    setPlaying(!playing);
-    setDialog(playing ? "Play :D" : "Pause :(");
-  };
 
   return (
     <div className="md:max-w-7xl max-w-3xl space-y-36 z-10">
@@ -42,34 +18,7 @@ function Hero() {
           </p>
         </article>
         <div className="flex-1 items-center justify-center hidden md:flex">
-          <div onClick={togglePlayPause}>
-            <img
-              src="computer.gif"
-              alt="Computer dance gif"
-              className={`w-max h-auto ${hover ? "noCursor" : ""}`}
-              onMouseEnter={() => setHover(true)}
-              onMouseMove={handleMouseMove}
-              onMouseLeave={() => setHover(false)}
-            />
-            {hover && (
-              <div
-                style={{
-                  left: `${position.x}px`,
-                  top: `${position.y}px`,
-                }}
-                className={"hoverText"}
-              >
-                {dialog}
-              </div>
-            )}
-            <ReactPlayer
-              url="music/song.mp3"
-              playing={playing}
-              loop={true}
-              width="0"
-              height="0"
-            />
-          </div>
+          <GifImage />
         </div>
       </section>
     </div>
