@@ -10,7 +10,20 @@ export default function Projects() {
     >
       <RandomTypewriter text="<Projects />" />
       <div className="flex flex-col sm:flex-row mt-6 md:mt-9">
-          <div className="w-full mb-8 md:mb-0 md:mr-8 md:flex-1">
+        <div className="w-full mb-8 md:mb-0 md:mr-8 md:flex-1">
+          <FadeInWhenVisible>
+            <Project
+              src="videos/globit.mp4"
+              title="Globit"
+              description="FullStack web for a currency exchange company between U.S. and Argentina banks. The app facilitates secure transactions, includes a user-friendly interface, and features an integrated admin system."
+              technologies={"Next.js - Framer Motion - Tailwind CSS - SQLite - NextAuth"}
+              liveUrl="https://globit.me/"
+              repoUrl="https://github.com/GusTiavo123/GlobitMe"
+              poster="videos/globit.png"
+            />
+          </FadeInWhenVisible>
+        </div>
+        <div className="w-full mb-8 md:mb-0 md:ml-8 md:flex-1">
           <FadeInWhenVisible>
             <Project
               src="videos/project1.mp4"
@@ -21,9 +34,11 @@ export default function Projects() {
               repoUrl="https://github.com/GusTiavo123/IdeaNova"
               poster="videos/project1.png"
             />
-            </FadeInWhenVisible>
-          </div>
-          <div className="w-full mb-8 md:mb-0 md:ml-8 md:flex-1">
+          </FadeInWhenVisible>
+        </div>
+      </div>
+      <div className="flex flex-col sm:flex-row md:mt-16">
+        <div className="w-full mb-8 md:mb-0 md:mr-8 md:flex-1">
           <FadeInWhenVisible>
             <Project
               src="videos/project2.mp4"
@@ -34,12 +49,10 @@ export default function Projects() {
               repoUrl="https://github.com/GusTiavo123/Comics-page"
               poster="videos/project2.png"
             />
-            </FadeInWhenVisible>
-          </div>
-      </div>
-      <FadeInWhenVisible>
-        <div className="flex flex-col sm:flex-row md:mt-16">
-          <div className="w-full md:mr-8 md:flex-1">
+          </FadeInWhenVisible>
+        </div>
+        <div className="w-full mb-8 md:mb-0 md:ml-8 md:flex-1">
+          <FadeInWhenVisible>
             <Project
               src="videos/project3.mp4"
               title="MovieCloud"
@@ -49,17 +62,9 @@ export default function Projects() {
               repoUrl="https://github.com/GusTiavo123/moviecloud"
               poster="videos/project3.png"
             />
-          </div>
-          <div className="hidden md:flex md:flex-col md:flex-1 md:items-center md:justify-center md:ml-8 bg-custom-box-dark rounded-xl border-t-2 border-custom-box-border">
-            <h2 className="text-3xl text-white font-semi-bold mb-4">
-              Coming Soon
-            </h2>
-            <p className="text-custom-gray text-md">
-              New projects ideas coming soon...
-            </p>
-          </div>
+          </FadeInWhenVisible>
         </div>
-      </FadeInWhenVisible>
+      </div>
     </section>
   );
 }
