@@ -17,7 +17,7 @@ const svgs: SVGprops[] = [
     className: "h-7 w-7"
   },
   {
-    href: "https://drive.google.com/file/d/1PzEudNv98XRjZH9XW6h9hljsY6COyM2N/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1saz318Re6TPWsUnoa7sGEDSw_tstQBmZ/view?usp=sharing",
     src: "svg/cv.svg",
     alt: "CV",
     label: "Download",
