@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
       alt: "SVG Github",
     },
     {
-      url: "https://drive.google.com/file/d/1PzEudNv98XRjZH9XW6h9hljsY6COyM2N/view?usp=sharing",
+      url: "https://drive.google.com/file/d/1MuSCuu80L3KH7neJ6irj5Z02sSHtZn1U/view?usp=sharing",
       icon: "svg/cv.svg",
       alt: "SVG CV",
     },
